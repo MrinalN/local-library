@@ -12,5 +12,9 @@ router.get('/', function(req, res, next) {
   //"next" can be used in the future if you want to add multiple route handlers to "/"
 });
 
+router.get('/cool', (req, res) => {
+  res.send(`You're so cool!`);
+})
+
 //exports router from module (to be called in app.js)
 module.exports = router;
